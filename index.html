@@ -3,88 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tela de Login</title>
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="estilo.css">
-
+    <title>Login Page</title>
 </head>
 <body>
+    
+    <div class="container" id="container">
 
-    <div id="container" class="container">
         <div class="form-container sign-up">
-            <form action="">
-                <h1> Criar Conta </h1>
+            <form>
+                <h1>Criar Conta</h1>
                 <div class="social-icons">
-                    <a href="#" target="_blank">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-
-                    <a href="#" target="_blank">
-                        <i class="fa-brands fa-facebook"></i>
-                    </a>
-
-                    <a href="#" target="_blank">
-                        <i class="fa-brands fa-github"></i>
-                    </a>
-
-                    <a href="#" target="_blank">
-                        <i class="fa-brands fa-linkedin-in"></i>
-                    </a>
-                </div> <!-- fim div social icons -->
-                <span> Ou insira o seu e-mail para Cadastro </span>
+                    <a href="#" class="icon"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <span>ou use seu e-mail para cadastro</span>
                 <input type="text" placeholder="Nome">
-                <input type="email" placeholder="email@email.com">
+                <input type="text" placeholder="Email">
                 <input type="password" placeholder="Senha">
-                <input type="number" placeholder="CPF">
-                <input type="date" placeholder="Data de Nascimento">
-                <button> Entrar </button>
-            </form> 
-        </div> <!-- fim form container sign-up -->
-        <div id="form-container sing-in">
-            <form action="">
+                <button>Inscrever-se</button>
+            </form>
+        </div>
+        <div class="form-container sign-in">
+            <form>
                 <h1>Entrar</h1>
                 <div class="social-icons">
-                    <a href="#" target="_blank">
-                        <i class="fa-brands fa-google"></i>
-                    </a>
-
-                    <a href="#" target="_blank">
-                        <i class="fa-brands fa-facebook"></i>
-                    </a>
-
-                    <a href="#" target="_blank">
-                        <i class="fa-brands fa-github"></i>
-                    </a>
-
-                    <a href="#" target="_blank">
-                        <i class="fa-brands fa-linkedin-in"></i>
-                    </a>
-                </div> <!-- fim div social icons -->
-                <span>Entre com E-mail</span>
-                <input type="email" placeholder="E-mail">
+                    <a href="#" class="icon"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <span>ou use seu e-mail e senha</span>
+                <input type="email" placeholder="Email">
                 <input type="password" placeholder="Password">
-                <a href="#" target="_blank"> Esqueceu sua senha? </a>
+                <a href="#">Esqueceu sua senha?</a>
                 <button>Entrar</button>
             </form>
-        </div> <!-- fim div container sing-in -->
+        </div>
+
         <div class="toggle-container">
             <div class="toggle">
-                <div class="toggle-painel toggle-left">
-                    <h1>Bem-vindo de volta! </h1>
-                    <p>Digite seus dados pessoas para usar nossos recursos.</p>
+            
+                <div class="toggle-panel toggle-left">
+                    <h1>Bem Vindo de Volta!</h1>
+                    <p>Digite seus dados pessoais para usar todos os recursos do site</p>
                     <button class="hidden" id="login">Entre</button>
-                </div> <!-- div fim toggle-painel toggle-left -->
-            </div> <!-- fim div toggle -->
-
-            <div class="toggle-painel toggle-right">
-                <h1> Olá, amigo! </h1>
-                <p> Cadastre-se com seus dados pessoas para utilizar nossos recursos </p>
-                <button class="hidden" id="register"> Inscrever-se </button>
-
+                </div>
+                
+                <div class="toggle-panel toggle-right">
+                    <h1>Hello, Friend!</h1>
+                    <p>Cadastre-se com seus dados pessoais para utilizar todos os recursos do site</p>
+                    <button class="hidden" id="register">Inscrever-se</button>
+                </div>
+            
             </div>
-        </div> <!-- fim div toggle container -->
-    </div> <!-- fim div container -->
-    
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
